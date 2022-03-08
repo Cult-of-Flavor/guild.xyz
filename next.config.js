@@ -1,4 +1,9 @@
 module.exports = {
+  reactStrictMode: true,
+  images: {
+    domains: ["https://flavor.lol"],
+  },
+
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
