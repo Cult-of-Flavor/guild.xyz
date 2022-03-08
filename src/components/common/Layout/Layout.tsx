@@ -14,7 +14,6 @@ import {
 } from "@chakra-ui/react"
 import useIsomorphicLayoutEffect from "hooks/useIsomorphicLayoutEffect"
 import Head from "next/head"
-import { useRouter } from "next/router"
 import { PropsWithChildren, ReactNode, useRef, useState } from "react"
 import GuildLogo from "../GuildLogo"
 import Footer from "./components/Footer"
@@ -56,7 +55,7 @@ const Layout = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, description, childrenWrapper?.current, action])
 
-  const router = useRouter()
+  // const router = useRouter()
 
   const guildLogoSize = useBreakpointValue({ base: 48, lg: 56 })
   const guildLogoIconSize = useBreakpointValue({ base: 20, lg: 28 })
