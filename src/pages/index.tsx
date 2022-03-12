@@ -111,7 +111,7 @@ const Page = ({ guilds: guildsInitial }: Props): JSX.Element => {
         <FlavorLogoLarge boxSize={510} />
       </Center> */}
       <FlavorIcon />
-      <Layout title="Get A Flavor For $MAGIC">
+      <Layout title="Get A Flavor for $MAGIC">
         {/* TODO: Make logo responsive at different screen sizes */}
       </Layout>
     </>

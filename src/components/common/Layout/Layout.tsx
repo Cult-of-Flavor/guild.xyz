@@ -44,7 +44,8 @@ const Layout = ({
   children,
 }: PropsWithChildren<Props>): JSX.Element => {
   const childrenWrapper = useRef(null)
-  const [bgHeight, setBgHeight] = useState("0")
+  const [, setBgHeight] = useState("0")
+
   const isMobile = useBreakpointValue({ base: true, sm: false })
 
   useIsomorphicLayoutEffect(() => {
@@ -59,50 +60,6 @@ const Layout = ({
 
   const guildLogoSize = useBreakpointValue({ base: 48, lg: 56 })
   const guildLogoIconSize = useBreakpointValue({ base: 20, lg: 28 })
-
-  // const skipToVideo = () => {
-  //   router.push("/video")
-  // }
-
-  // useEffect(() => {}, [])
-
-  // const TypingAnimation = ({ content = "", speed = 1000, fontFamily }) => {
-  //   const [displayedContent, setDisplayedContent] = useState("")
-
-  //   const [index, setIndex] = useState(0)
-
-  //   useEffect(() => {
-  //     /*Create a new setInterval and store its id*/
-  //     const animKey = setInterval(() => {
-  //       // eslint-disable-next-line @typescript-eslint/no-shadow
-  //       setIndex((index) => {
-  //         /*This setState function will set the index
-  //       to index+1 if there is more content otherwise
-  //       it will destory this animation*/
-
-  //         if (index >= content.length - 1) {
-  //           clearInterval(animKey)
-  //           return index
-  //         }
-  //         return index + 1
-  //       })
-  //       return
-  //     }, speed)
-  //   }, [content, speed])
-
-  //   useEffect(() => {
-  //     // eslint-disable-next-line @typescript-eslint/no-shadow
-  //     setDisplayedContent((displayedContent) => displayedContent + content[index])
-  //   }, [content, index])
-
-  //   return (
-  //     <>
-  //       <Text fontFamily={fontFamily || "display"} className="type-writer">
-  //         {displayedContent}
-  //       </Text>
-  //     </>
-  //   )
-  // }
 
   return (
     <Box>
@@ -166,16 +123,6 @@ const Layout = ({
                 >
                   {title}
                 </Heading>
-                <Text
-                  as="h2"
-                  fontSize={40}
-                  fontFamily="PressStart2P"
-                  color={"#FFF3BF"}
-                  wordBreak={"break-word"}
-                  textAlign="center"
-                >
-                  And Taste The Spice!
-                </Text>
 
                 <Flex>
                   <Container width={350} margingTop={-32}>
@@ -245,14 +192,22 @@ const Layout = ({
           color={"#FFF3BF"}
           wordBreak={"break-word"}
           textAlign="center"
+          marginY={12}
         >
-          See What We Are About
+          Peek into the Kitchen
         </Text>
-        <Container width={350} margingTop={-32}>
-          <AspectRatio maxW={350} height={343} ratio={1} autoPlay={true}>
+
+        <Container
+          width={600}
+          margingTop={-32}
+          borderWidth={2}
+          borderColor={"#CEA659"}
+        >
+          <AspectRatio height={400} ratio={1} autoPlay={true}>
             <iframe
-              title="fire-breathing-gif"
-              src="https://www.kapwing.com/e/6216f880e8513f007fc21173"
+              title="flavor-video"
+              src="assets/flavor_intro_video.mp4"
+              allowFullScreen
             />
           </AspectRatio>
         </Container>
@@ -265,15 +220,39 @@ const Layout = ({
             marginLeft={4}
           >
             <br />
-            Juicy yields and impeccable taste
+            <Link
+              href="https://medium.com/0xflavor/flavor-juicy-yields-and-impeccable-taste-c01c402661e0"
+              textDecoration={"underline"}
+            >
+              {`Flavor  `}
+            </Link>{" "}
+            is the Treasure guild serving up the spice —{" "}
+            <Link href="https://discord.gg/3UgdnXZNZh" textDecoration={"underline"}>
+              join us
+            </Link>{" "}
+            to learn about $MAGIC and gaming NFTs, max out your $MAGIC yields, swap
+            alpha, and much more…
             <br />
             <br />
-            We are a Treasure guild serving up the spice. Join us to max out your
-            $MAGIC yields, stake your Treasures or Legions for bonuses, and more!
+            $MAGIC{" "}
+            <Link
+              href="https://medium.com/0xflavor/magic-where-it-came-from-d7e76d50a88a"
+              textDecoration={"underline"}
+            >
+              {" "}
+              started off as writing on tile…
+            </Link>{" "}
+            just another project in the sea of Loot derivatives. Now, it’s a thriving
+            ecosystem of composable metaverses integrating NFT & DeFi elements, built
+            on one of the leading Ethereum layer 2 chains, Arbitrum.
             <br />
             <br />
-            Treasure is an ecosystem built on cooperation. Group coordination leads
-            to higher rewards for all!
+            Life moves quickly in Web3.{" "}
+            <Link href="https://discord.gg/3UgdnXZNZh" textDecoration={"underline"}>
+              Join our community
+            </Link>{" "}
+            and you’ll be cooking in no time — with only the best recipes in
+            Bridgeworld!
           </Text>
         </Center>
         <Center margin={8}>

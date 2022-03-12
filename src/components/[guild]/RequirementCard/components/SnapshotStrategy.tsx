@@ -30,7 +30,7 @@ const SnapshotStrategy = ({ requirement }: Props): JSX.Element => (
         isExternal
         title="View on GitHub"
       >
-        "test"
+        {requirement.key.charAt(0).toUpperCase() + requirement.key.slice(1)}
       </Link>
       {` snapshot strategy`}
     </RequirementText>

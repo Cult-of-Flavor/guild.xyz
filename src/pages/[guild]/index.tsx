@@ -184,13 +184,14 @@ const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 const getStaticPaths: GetStaticPaths = async () => {
-  const mapToPaths = (_: Guild[]) => []
+  const mapToPaths = (_: Guild[]) =>
+    Array.isArray(_) ? _.map(({ urlName: guild }) => ({ params: { guild } })) : []
 
   const paths = await fetcher(`/guild`).then(mapToPaths)
 
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   }
 }
 
