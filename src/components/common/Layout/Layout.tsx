@@ -56,7 +56,7 @@ const Layout = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, description, childrenWrapper?.current, action])
 
-  // const router = useRouter()
+  const router = useRouter()
 
   const guildLogoSize = useBreakpointValue({ base: 48, lg: 56 })
   const guildLogoIconSize = useBreakpointValue({ base: 20, lg: 28 })
@@ -177,14 +177,7 @@ const Layout = ({
           </VStack>
           <Box ref={childrenWrapper}>{children}</Box>
         </Container>
-
-        <Image
-          alt="fire"
-          width={1800}
-          height={500}
-          src="flavorLogos/fire.svg"
-          marginTop={-80}
-        />
+        <Image marginTop={-80} alt="fire" width={1900} src="flavorLogos/fire.svg" />{" "}
         <Text
           as="h2"
           fontSize={40}
@@ -196,7 +189,6 @@ const Layout = ({
         >
           Peek into the Kitchen
         </Text>
-
         <Container
           width={600}
           margingTop={-32}
