@@ -44,7 +44,7 @@ const Layout = ({
   children,
 }: PropsWithChildren<Props>): JSX.Element => {
   const childrenWrapper = useRef(null)
-  const [, setBgHeight] = useState("0")
+  const [bgHeight, setBgHeight] = useState("0")
 
   const isMobile = useBreakpointValue({ base: true, sm: false })
 
@@ -56,7 +56,7 @@ const Layout = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, description, childrenWrapper?.current, action])
 
-  const router = useRouter()
+  // const router = useRouter()
 
   const guildLogoSize = useBreakpointValue({ base: 48, lg: 56 })
   const guildLogoIconSize = useBreakpointValue({ base: 20, lg: 28 })

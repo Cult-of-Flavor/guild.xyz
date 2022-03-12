@@ -52,7 +52,7 @@ const StakeMagic = ({
   backgroundImage,
   children,
 }: PropsWithChildren<Props>): JSX.Element => {
-  const childrenWrapper = useRef(null)
+  const childrenWrapper = useRef()
   const [bgHeight, setBgHeight] = useState("0")
   const isMobile = useBreakpointValue({ base: true, sm: false })
 
