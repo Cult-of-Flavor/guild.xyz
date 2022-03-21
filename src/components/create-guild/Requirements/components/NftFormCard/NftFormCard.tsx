@@ -93,9 +93,7 @@ const NftFormCard = ({ index, field }: Props): JSX.Element => {
           )
         )
         .map((attributeName) => ({
-          label:
-            attributeName.charAt(0).toUpperCase() + attributeName.slice(1) ||
-            "Any attribute",
+          label: "Any attribute",
           value: attributeName,
         })),
     [metadata]
@@ -104,9 +102,7 @@ const NftFormCard = ({ index, field }: Props): JSX.Element => {
   const nftCustomAttributeValues = useMemo(() => {
     const mappedAttributeValues =
       metadata?.[key]?.map((attributeValue) => ({
-        label:
-          attributeValue?.toString().charAt(0).toUpperCase() +
-          attributeValue?.toString().slice(1),
+        label: "test",
         value: attributeValue,
       })) || []
 

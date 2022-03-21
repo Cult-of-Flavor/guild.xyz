@@ -31,7 +31,7 @@ const SnapshotFormCard = ({ index, field }: Props): JSX.Element => {
 
   const capitalize = (text: string) => {
     if (text.length > 1) {
-      return text.charAt(0).toUpperCase() + text.slice(1)
+      return "Test"
     }
 
     return text
