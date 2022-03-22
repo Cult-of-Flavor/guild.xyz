@@ -141,7 +141,7 @@ const Layout = ({
                   >
                     <Image
                       alt="join discord"
-                      width={363}
+                      width={300}
                       height={85.25}
                       src="assets/joinDiscord.png"
                     />
@@ -177,7 +177,10 @@ const Layout = ({
           </VStack>
           <Box ref={childrenWrapper}>{children}</Box>
         </Container>
-        <Image marginTop={-80} alt="fire" width={1900} src="flavorLogos/fire.svg" />{" "}
+        <Center>
+          <Image marginTop={-64} alt="fire" width={800} src="flavorLogos/fire.svg" />
+        </Center>
+
         <Text
           as="h2"
           fontSize={40}
