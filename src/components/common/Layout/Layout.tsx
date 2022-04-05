@@ -253,7 +253,7 @@ const Layout = ({
         <Center margin={8}>
           <Link
             target="_blank"
-            href={`https://airtable.com/shr4PJoVfeBvGm2yZ`}
+            href={`https://docs.google.com/forms/d/e/1FAIpQLSfiit_l_KpcgVNVZTsuWQTH918UNkGc2AMJMGYIdHGsu10qKA/viewform?usp=send_form`}
             prefetch={false}
             _hover={{ textDecor: "none" }}
           >
