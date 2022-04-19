@@ -135,15 +135,15 @@ const Layout = ({
                   </Container>
                   <Link
                     target="_blank"
-                    href={`https://discord.com/channels/933057635790491768/933076807157182514`}
+                    href={`https://utdk1t8e1ld.typeform.com/to/mScmJod7`}
                     prefetch={false}
                     _hover={{ textDecor: "none" }}
                   >
                     <Image
-                      alt="join discord"
+                      alt="join us"
                       width={300}
                       height={85.25}
-                      src="assets/joinDiscord.png"
+                      src="assets/joinUs.png"
                     />
                   </Link>
                 </Flex>
@@ -216,6 +216,7 @@ const Layout = ({
           >
             <br />
             <Link
+              target={"_blank"}
               href="https://medium.com/0xflavor/flavor-juicy-yields-and-impeccable-taste-c01c402661e0"
               textDecoration={"underline"}
             >
@@ -231,6 +232,7 @@ const Layout = ({
             <br />
             $MAGIC{" "}
             <Link
+              target={"_blank"}
               href="https://medium.com/0xflavor/magic-where-it-came-from-d7e76d50a88a"
               textDecoration={"underline"}
             >
@@ -243,7 +245,11 @@ const Layout = ({
             <br />
             <br />
             Life moves quickly in Web3.{" "}
-            <Link href="https://discord.gg/3UgdnXZNZh" textDecoration={"underline"}>
+            <Link
+              target={"_blank"}
+              href="https://discord.gg/3UgdnXZNZh"
+              textDecoration={"underline"}
+            >
               Join our community
             </Link>{" "}
             and you’ll be cooking in no time — with only the best recipes in
@@ -253,7 +259,7 @@ const Layout = ({
         <Center margin={8}>
           <Link
             target="_blank"
-            href={`https://docs.google.com/forms/d/e/1FAIpQLSfiit_l_KpcgVNVZTsuWQTH918UNkGc2AMJMGYIdHGsu10qKA/viewform?usp=send_form`}
+            href={`https://beautiful-mandevilla-0d2.notion.site/Staking-MAGIC-6ab61641384f47fbb308bd8ddf1a5f8a `}
             prefetch={false}
             _hover={{ textDecor: "none" }}
           >

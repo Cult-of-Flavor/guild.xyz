@@ -1,14 +1,12 @@
-import { Button, ButtonProps } from "@chakra-ui/react"
-import { PropsWithChildren } from "react"
+import { Button } from "@chakra-ui/react"
 
-const AccountButton = ({
-  children,
-  width,
-  height,
-  fontSize,
-  ...rest
-}: PropsWithChildren<ButtonProps>): JSX.Element => (
+const AccountButton = ({ children, width, height, fontSize, ...rest }) => (
   <Button
+    _hover={{
+      background: "black",
+      color: "black",
+    }}
+    colorScheme="black"
     borderRadius="none"
     backgroundColor="black"
     height={height}
