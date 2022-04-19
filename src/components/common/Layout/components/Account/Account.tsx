@@ -67,6 +67,8 @@ const Account = (): JSX.Element => {
         width={200}
         isLoading={!triedEager}
         onClick={openWalletSelectorModal}
+        height={undefined}
+        fontSize={undefined}
       >
         <Image alt="connect" width="200" height="58" src="assets/connect.png" />
       </AccountButton>
