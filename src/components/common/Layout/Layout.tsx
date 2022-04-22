@@ -223,7 +223,10 @@ const Layout = ({
               {`Flavor  `}
             </Link>{" "}
             is the Treasure guild serving up the spice —{" "}
-            <Link href="https://discord.gg/3UgdnXZNZh" textDecoration={"underline"}>
+            <Link
+              href="https://utdk1t8e1ld.typeform.com/to/mScmJod7"
+              textDecoration={"underline"}
+            >
               join us
             </Link>{" "}
             to learn about $MAGIC and gaming NFTs, max out your $MAGIC yields, swap
@@ -247,7 +250,7 @@ const Layout = ({
             Life moves quickly in Web3.{" "}
             <Link
               target={"_blank"}
-              href="https://discord.gg/3UgdnXZNZh"
+              href="https://utdk1t8e1ld.typeform.com/to/mScmJod7"
               textDecoration={"underline"}
             >
               Join our community
